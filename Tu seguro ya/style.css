@@ -1851,7 +1851,7 @@ padding: 1rem;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
 
   .container_cards {
