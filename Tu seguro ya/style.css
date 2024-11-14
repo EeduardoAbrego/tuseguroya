@@ -1488,9 +1488,9 @@ padding: 1rem;
   opacity: 1;
 }
 .b1_fav p {
-  width: 9.1875rem;
+  width: auto;
   height: 1.625rem;
-  text-align: left;
+  text-align: center;
   font: normal normal 600 1.25rem/1.625rem "Dosis Med";
   letter-spacing: 0rem;
   color: #ffffff;
@@ -1521,6 +1521,7 @@ padding: 1rem;
 }
 
 .b2 {
+ box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1529,6 +1530,7 @@ padding: 1rem;
   border: 0.0625rem solid #357c9c;
   border-radius: 1.875rem;
   opacity: 1;
+  padding: 1rem;
 }
 
 .b2 p {
