@@ -1946,6 +1946,9 @@ padding: 1rem;
   .logo_cot {
     width: 26rem;
   }
+  .des{
+    top: 10rem;
+  }
 }
 @media (max-width: 483px) {
   .app {
