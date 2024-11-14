@@ -1466,8 +1466,8 @@ footer {
   z-index: 1;
 }
 .butons {
-  height: 6.5625rem;
-  width: 18.25rem;
+  height: 7.5625rem;
+  width: 19.25rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1480,7 +1480,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 3.0625rem;
-  width: 18.25rem;
+  width: auto;
   background: #e4373b 0% 0% no-repeat padding-box;
   border-radius: 1.875rem;
   opacity: 1;
@@ -1493,6 +1493,7 @@ footer {
   letter-spacing: 0rem;
   color: #ffffff;
   opacity: 1;
+  white-space: nowrap;
 }
 
 .b1 {
@@ -1522,7 +1523,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 3.0625rem;
-  width: 18.25rem;
+  width: auto;
   border: 0.0625rem solid #357c9c;
   border-radius: 1.875rem;
   opacity: 1;
