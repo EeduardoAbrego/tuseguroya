@@ -1948,7 +1948,12 @@ padding: 1rem;
   }
   .des{
     top: 10rem;
+     font: normal normal 400 1.3625rem / 2.5rem "Dosis Med";
   }
+  .conditions {
+    font: normal normal 600 1.35rem / 1.625rem "Dosis Med";
+   margin-bottom: 0rem; 
+}
 }
 @media (max-width: 483px) {
   .app {
