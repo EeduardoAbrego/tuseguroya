@@ -47,7 +47,6 @@ p {
   margin-left: 5.1875rem;
   width: 12em;
   height: 3.5em;
-
   opacity: 1;
 }
 
@@ -125,6 +124,7 @@ a:visited {
   text-align: left;
   margin-left: 0;
   line-height: 2rem;
+    white-space: nowrap;
 }
 
 .number {
@@ -1739,6 +1739,12 @@ padding: 1rem;
 @media (max-width: 768px) {
   html {
     font-size: 6px;
+  }
+  .logo{
+    margin-left: 2rem;
+  }
+  .icon_flot{
+    left:1.3rem ;
   }
   .opciones_seguros {
     padding-top: 0;
