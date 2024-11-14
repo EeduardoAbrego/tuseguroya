@@ -1,0 +1,2000 @@
+body,
+p {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Dosis Med";
+  src: url(./font/Dosis-Medium.otf);
+}
+@font-face {
+  font-family: "Dosis Bold";
+  src: url(./font/Dosis-Bold.otf);
+}
+
+@font-face {
+  font-family: "Reg";
+  src: url(./font/Dosis-Regular.otf);
+}
+
+@font-face {
+  font-family: "Sem";
+  src: url(./font/Dosis-SemiBold.otf);
+}
+@font-face {
+  font-family: "Encode";
+  src: url(./font/static/EncodeSans-SemiBold.ttf);
+}
+
+/* Header seccion 1 */
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 6.375rem;
+  background: #ffffff 0% 0% no-repeat;
+  box-shadow: 0rem 0.1875rem 0.375rem #00000029;
+  opacity: 1;
+  gap: 2rem;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.logo {
+  margin-left: 5.1875rem;
+  width: 12em;
+  height: 3.5em;
+
+  opacity: 1;
+}
+
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  height: 3.5rem;
+  gap: 3rem;
+  margin-right: 8.8125rem;
+}
+
+.cont-caja {
+  display: flex;
+  height: 3.5rem;
+  overflow: hidden;
+  gap: 0.625rem;
+}
+
+.menu {
+  width: 2.6875rem;
+  height: 1.75rem;
+  object-fit: cover;
+  align-self: center;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+.buttons_home {
+  text-decoration: none;
+  font: normal normal bold 1.0625rem/1.3125rem "Dosis Bold";
+  letter-spacing: 0px;
+  color: #666666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 98.8125rem;
+  width: 7.625rem;
+  height: 3.1875rem;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 0.125rem solid #6c757d;
+  border-radius: 1.625rem;
+  opacity: 1;
+  white-space: nowrap;
+}
+.contact {
+  width: auto;
+
+  margin-top: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.part1 {
+  display: flex;
+  justify-content: space-between;
+}
+.contact_tel {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.625rem;
+}
+.contact_tel img {
+  width: 1.8125rem;
+  height: 1.8125rem;
+}
+
+.days {
+  display: flex;
+  height: 1.25rem;
+  margin: 0%;
+  font: normal normal bold 1rem/1.25rem "Dosis Med";
+  color: #28373b;
+  text-align: center;
+}
+
+.number {
+  padding: 0%;
+  margin: 0rem;
+  width: 10.625rem;
+  height: 2rem;
+  text-align: left;
+  font: normal normal 500 1.5625rem/2rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #256a8f;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+/* Header seccion 1 */
+
+/* Icono con animacion fija  */
+.icon_flot {
+  position: fixed;
+  z-index: 12;
+  top: 0.875rem;
+  left: 4.5rem;
+  width: 5rem;
+  height: 5rem;
+  opacity: 0;
+  animation: icon linear both;
+  animation-timeline: scroll(root);
+  animation-range: 0 6.25rem;
+}
+
+@keyframes icon {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Icono con animacion fija  */
+
+/* Imagen con titulo , section 2  */
+.cont_principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 61.125rem;
+  background-image: url("img/Section2/Version_degradado.png");
+  background-position: center;
+  background-size: cover;
+  mix-blend-mode: multiply;
+}
+
+.box_content {
+  position: relative;
+  top: -1.875rem;
+}
+
+.frase1 {
+  margin: 0;
+  font-family: "Dosis Med";
+
+  white-space: nowrap;
+
+  width: 32.375rem;
+  height: 4.75rem;
+  text-align: left;
+  font-size: 3.75rem;
+  letter-spacing: 0rem;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.frase2 {
+  margin: 0;
+  font-family: "Dosis Med";
+  width: 49.1875rem;
+  height: 9.0625rem;
+  white-space: nowrap;
+  text-align: left;
+  font-size: 7.1875rem;
+  font-weight: medium;
+  letter-spacing: 0rem;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.box_title {
+  margin-bottom: 4.375rem;
+}
+.dates_important {
+  position: relative;
+
+  display: flex;
+  justify-content: space-around;
+
+  width: 49.1875rem;
+  height: 9.4375rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 14.4375rem;
+  height: 10.625rem;
+}
+
+.box p {
+  text-align: center;
+  font: normal normal 500 1.875rem/2.375rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.box_ {
+  width: 13.75rem;
+}
+/* Imagen con titulo , section 2  */
+
+/* Barra fija  */
+.barra-fija {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  z-index: 99999999999;
+  box-sizing: border-box;
+  animation: barra linear both;
+  animation-timeline: scroll(root);
+  animation-range: 0 0.0625rem;
+}
+
+@keyframes barra {
+  to {
+    background: transparent linear-gradient(270deg, #1080af 0%, #55bac6 100%) 0%
+      0% no-repeat padding-box;
+    height: 8rem;
+  }
+}
+
+.relleno {
+  width: 19.625rem;
+  height: 8.625rem;
+}
+.button_cotizar {
+  width: 35.5rem;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+.button_cotizar a {
+  /* le agrege esto  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* le agrege esto  */
+  width: 35.5rem;
+  height: 3.875rem;
+  background: #e4373b 0% 0% no-repeat padding-box;
+  border: 0.0625rem solid #707070;
+  border-radius: 1.9375rem;
+  opacity: 1;
+  text-align: center;
+}
+
+.texto1 {
+  width: 24.125rem;
+  height: 3.125rem;
+  text-align: center;
+  font: normal normal bold 2.5rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.texto2 {
+  text-align: center;
+  font: normal normal 500 1.25em "Dosis Med";
+  letter-spacing: 0rem;
+  color: #ffffff;
+  opacity: 1;
+  margin-top: 0.8125rem;
+  animation: texto2 linear both;
+  animation-timeline: scroll(root);
+  animation-range: 0 6.25rem;
+}
+
+.logo_flotante {
+  width: 11.375rem;
+  height: 13rem;
+  position: relative;
+  margin-right: 8.25rem;
+  margin-bottom: 9.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo_flotante_cotizador {
+  width: 11.375rem;
+  height: 13rem;
+  position: relative;
+  margin-right: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gif1 {
+  width: 11.375rem;
+  height: 4.375rem;
+  object-fit: cover;
+}
+.gif2 {
+  width: 8.625rem;
+  height: 8.625rem;
+}
+@keyframes texto2 {
+  to {
+    opacity: 1;
+  }
+}
+/* Barra fija  */
+
+/* Opciones de seguros Section 3 */
+.opciones_seguros {
+  box-sizing: border-box;
+  background-color: #ffffff;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: auto;
+  padding-top: 2.375rem;
+  z-index: -1;
+}
+.title1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin: 0;
+  width: 30rem;
+  height: 4.3125rem;
+  text-align: center;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--principal);
+  text-align: center;
+  font: normal normal bold 3.4375rem/4.3125rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #256a8f;
+  opacity: 1;
+}
+
+.subtitle {
+  width: auto; /* cambie a auto */
+  height: 2rem;
+  margin: 0;
+  white-space: nowrap;
+  text-align: center;
+  font: normal normal 500 1.5625em/2em "Dosis Med";
+  letter-spacing: 0rem;
+  color: #666666;
+  opacity: 1;
+}
+
+.tipes-seguros {
+  margin-top: 2.6875rem;
+  width: 90%;
+  height: 18.75rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  align-items: center;
+
+  row-gap: 3rem;
+  overflow: hidden;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  transition: height 1s ease, margin-bottom 3s ease;
+  interpolate-size: allow-keywords;
+}
+.tipes-seguros.expanded {
+  height: auto;
+  margin-bottom: 0.625rem;
+}
+
+.box_s {
+  box-sizing: border-box;
+  width: 16.25rem;
+  height: 16.6875rem;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0rem 0.1875rem 0.375rem #00000029;
+  border-radius: 2.0625rem;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box_s .trans {
+  opacity: 1;
+  width: 5.4375rem;
+  height: 5.375rem;
+  margin-top: 3.9375rem;
+  color: #581d1d;
+}
+
+.box_s img {
+  width: 8.0625rem;
+  height: 8rem;
+  margin-top: 2.625rem;
+}
+
+.box_s p {
+  text-align: center;
+  font: normal normal bold 1.875rem/2.375rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #256a8f;
+  opacity: 1;
+}
+
+.contenedor_mas_menos {
+  cursor: pointer;
+  position: relative;
+  grid-column: 6;
+  grid-row: 1;
+}
+.caja6_1 {
+  display: inline-flex;
+}
+
+.caja6_2 {
+  display: none;
+}
+
+.margin20 {
+  margin-top: 1.25rem;
+}
+.margin40 {
+  margin-top: 2.5rem;
+}
+.margin_top {
+  margin-top: 3.8125rem;
+}
+.cont_flex_questions {
+  width: 100%;
+  height: 4.375rem;
+  margin-top: 4.7188rem;
+  margin-bottom: 5.875rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.content1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.5rem;
+  height: 100%;
+  background: var(--principal-1) 0% 0% no-repeat padding-box;
+  background: #1080af 0% 0% no-repeat padding-box;
+  border-radius: 2.9375rem;
+  opacity: 1;
+}
+
+.content2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.5rem;
+  height: 100%;
+  background: var(--principal-2) 0% 0% no-repeat padding-box;
+  background: #55bac6 0% 0% no-repeat padding-box;
+  border-radius: 2.9375rem;
+  opacity: 1;
+}
+
+.questions {
+  text-align: center;
+  font: normal normal bold 1.875em/1.75em "Dosis Med";
+  letter-spacing: 0rem;
+  color: #ffffff;
+  gap: 0.625rem;
+  opacity: 1;
+}
+
+/*  App section  4 */
+.app {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 44.9375rem;
+  background: var(--principal-1) 0% 0% no-repeat padding-box;
+  background: #1080af 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.info_app {
+  width: 34.5rem;
+  height: 35.75rem;
+  margin-left: 6.25rem;
+}
+
+.t2 {
+  width: 33.5rem;
+  height: 7.5625rem;
+  margin: 0rem;
+  text-align: center;
+  font: normal normal 500 5.9375rem/7.5625rem "Dosis Med";
+  letter-spacing: 0.0419rem;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.parrafo {
+  margin: 0;
+  margin-top: 1.8125rem;
+  width: 28.8125rem;
+  height: 9.375rem;
+  text-align: left;
+  font: normal normal 500 2.5rem/3.125rem "Dosis Med";
+  letter-spacing: 0.0175rem;
+  color: #ffffff;
+  opacity: 1;
+}
+.acc_web {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.6875rem;
+  width: 100%;
+  height: 4.5625rem;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 0.0625rem solid #707070;
+  border-radius: 1.9375rem;
+  opacity: 1;
+  text-align: center;
+  font: normal normal bold 2.5rem/3.125rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #1080af;
+  opacity: 1;
+}
+.enlace {
+  margin-top: 3.9375rem;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.enlace a {
+  width: auto;
+}
+
+.app_store {
+  width: 100%;
+  max-width: 16.75rem;
+  object-fit: cover;
+}
+
+.svg_app {
+  margin-top: -4.375rem;
+  margin-left: -3.875rem;
+  width: 42.6875rem;
+  height: 50.5rem;
+}
+/*  App section  4 */
+
+/* Descripcion seccion 5 */
+
+.description {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 51.875rem;
+  padding-top: 6.25rem;
+}
+
+.container_flex_descriptions {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  row-gap: 5.875rem;
+  width: 68.125rem;
+  height: auto;
+}
+
+.box_des {
+  height: 13.875rem;
+  width: 16.5625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box_des img {
+  width: 6.875rem;
+  height: 6.875rem;
+}
+
+.rapido_eficaz {
+  position: relative;
+  left: -0.625rem;
+}
+.box_des p {
+  height: 4.5rem;
+  width: 100%;
+  text-align: center;
+
+  margin: 0;
+  text-align: center;
+  font: normal normal 500 1.75rem/2.25rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #256a8f;
+  opacity: 1;
+}
+
+.box_des .color_p {
+  color: #55bac6;
+}
+
+.texto_final {
+  width: 43.125rem;
+  height: 2.375rem;
+  text-align: center;
+  font: normal normal normal 1.875rem/1.75rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #999999;
+  opacity: 1;
+}
+
+.texto_final p {
+  margin: 0;
+  margin-top: 6.8125rem;
+  white-space: nowrap;
+}
+/* Descripcion seccion 5 */
+
+/*Slider companias section 6   */
+
+.slider {
+  width: 100%;
+  height: 10.6875rem;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.slider:hover .slide_comp {
+  animation-play-state: paused;
+}
+.slide_comp {
+  display: inline-block;
+  animation: 20s slider infinite linear;
+}
+.slide_comp img {
+  height: 3.5rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.holando {
+  padding: 0 2rem;
+}
+
+/* seccion foto 2  */
+
+.img2 img {
+  margin: 0;
+  width: 100%;
+  height: 33.75rem;
+  object-fit: cover;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/*  Comentarios section  7 */
+
+.coments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 59rem;
+}
+.calification {
+  width: 46.25rem;
+  height: 15.625rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.promedio_calificacion {
+  margin-top: 2.875rem;
+  width: 15.25rem;
+  height: 3.9375rem;
+  text-align: center;
+  font: normal normal bold 3.125rem/3.9375rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #999999;
+  opacity: 1;
+}
+
+.promedio_img_star {
+  width: 16.25rem;
+  height: 2.4375rem;
+
+  opacity: 1;
+  margin-top: 1.8125rem;
+  text-align: center;
+}
+
+.cantidad_comentarios {
+  margin-top: 1.8125rem;
+  width: 46.25rem;
+  height: 2.75rem;
+  text-align: center;
+  letter-spacing: 0rem;
+  color: #999999;
+  opacity: 1;
+  font: normal normal 500 2.1875rem/2.75rem "Dosis Med";
+}
+.container_cards_com {
+  box-sizing: border-box;
+  width: 100%;
+  height: 31.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.slider_comentarios {
+  width: 102.5rem;
+  height: 32.5rem;
+  display: flex;
+  overflow: hidden;
+  padding: 1rem 0.9rem;
+}
+
+.sli {
+  box-sizing: border-box;
+  gap: 1rem;
+  width: 100%;
+  height: 31rem;
+  display: flex;
+}
+
+.buttons_coment {
+  all: unset;
+}
+
+.buttons_coment img {
+  width: 5rem;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  min-width: 24.875rem;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0rem 0.1875rem 0.375rem #00000029;
+  border-radius: 2.0625rem;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Cada Card */
+.img_star {
+  margin-top: 1.8125rem;
+  width: 7.625rem;
+  height: 1rem;
+  text-align: center;
+}
+
+.icon_google {
+  margin-top: 1.4375rem;
+  width: 1.8125rem;
+  height: 1.8125rem;
+}
+
+.title_coment_user {
+  margin-top: 0.8125rem;
+  width: 15.5rem;
+  height: 2.75rem;
+  text-align: center;
+  font: normal normal bold 2.1875em/2.75em "Dosis Med";
+  letter-spacing: 0rem;
+  color: #999999;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.coment_user {
+  margin-top: 1.4375rem;
+  width: 90%;
+  height: 4rem;
+  text-align: left;
+  font: normal normal 500 1.5625em/2em "Dosis Med";
+  letter-spacing: 0rem;
+  color: #999999;
+  opacity: 1;
+}
+
+.name_user {
+  margin-top: 6.4375rem;
+  width: 8.375rem;
+  height: 1.625rem;
+  text-align: center;
+  font: normal normal bold 1.25em/1.625em "Dosis Med";
+  letter-spacing: 0rem;
+  color: #999999;
+  opacity: 1;
+}
+
+.date_coment {
+  width: 3.875rem;
+  height: 1.625rem;
+  text-align: center;
+  font: normal normal normal 1.25em/1.625em "Dosis Med";
+  letter-spacing: 0rem;
+  color: #999999;
+  opacity: 1;
+}
+
+.img_user {
+  margin-top: 0.3125rem;
+  margin-bottom: 1rem;
+  width: 4.9375rem;
+  height: 4.9375rem;
+  background-color: #e4373b; /* Luego quitar ,es para referencia */
+  border-radius: 50%;
+}
+/* Cada Card */
+
+.more_coments {
+  margin-top: 2.0625rem;
+  width: 14.125rem;
+  height: 2.375rem;
+  text-align: left;
+  text-decoration: underline;
+  font: normal normal normal 1.875em/2.375em "Reg";
+  letter-spacing: 0.0563rem;
+  color: #1080af;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+/* footer */
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 27.4375rem;
+  background: #206990 0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin-bottom: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.footer_cotizacion {
+  position: relative;
+  width: 100%;
+  height: 27.4375rem;
+  margin-bottom: 0;
+  background: #206990 0% 0% no-repeat padding-box;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.container_footer {
+  width: 90%;
+  height: 20.1875rem;
+}
+
+.div1 {
+  width: 100%;
+  height: 4.75rem;
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 3.125rem;
+}
+
+.contenido1 {
+  width: 27.4375rem;
+  height: 1.875rem;
+
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenido2 {
+  width: 24.875rem;
+  height: 4.75rem;
+  text-align: right;
+  font: normal normal normal 1.375rem/1.75rem "Reg";
+  letter-spacing: 0rem;
+  color: #ffffff;
+}
+
+.con2_1 {
+  font: normal normal 600 1.875rem/2.375rem "Sem";
+  letter-spacing: 0rem;
+  color: #ffffff;
+}
+
+.redes {
+  width: 7.8125rem;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.redes img {
+  width: 1.875rem;
+  height: 100%;
+}
+
+.redes p {
+  width: 5.25rem;
+  height: 1.75rem;
+  text-align: right;
+  font: normal normal normal 1.375em/1.75em "Reg";
+  letter-spacing: 0.125rem;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.div2 {
+  width: 100%;
+  height: 6.3125rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.logo_ssn {
+  width: 21.75rem;
+  height: 6.3125rem;
+}
+
+.contenido4 {
+  height: 4.3125rem;
+  width: 75%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenido5 {
+  height: 1.75rem;
+  display: flex;
+  align-self: self-end;
+
+  white-space: nowrap;
+}
+
+.numero_tel {
+  width: 9.4375rem;
+  height: 1.75rem;
+  text-align: right;
+  font: normal normal bold 1.375em/1.75em "Dosis Bold";
+  letter-spacing: 0rem;
+  color: #ffffff;
+  margin-right: 0.3125rem;
+}
+
+.matricula {
+  width: 20.75rem;
+  height: 1.75rem;
+  text-align: right;
+  font: normal normal normal 1.375em/1.75em "Reg";
+  letter-spacing: 0rem;
+  color: #ffffff;
+}
+
+.letra_chica {
+  display: flex;
+  height: 2.625rem;
+  text-align: center;
+  font: normal normal 500 1.0625em "Reg";
+  letter-spacing: 0rem;
+  color: #ffffff;
+
+  margin-top: 2.25rem;
+}
+.tuseguro {
+  height: 0.625rem;
+}
+
+/* Index2   Index2  Index2  Index2  Index2  Index2   */
+.cotizaciones {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cont_padre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  flex-shrink: 0;
+}
+
+.dates {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.75rem;
+  width: 100%;
+  gap: 2rem;
+}
+.container5 {
+  height: 2.375rem;
+  width: 24.25rem;
+  text-align: left;
+  font: normal normal normal 1.875rem/2.375rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #256a8f;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.container6 {
+  height: auto;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.3125rem;
+}
+.model {
+  text-align: right;
+  font: normal normal bold 1.875rem/2.375rem "Dosis Bold";
+  letter-spacing: 0rem;
+  color: #666666;
+}
+.user {
+  text-align: right;
+  font: normal normal 500 1.875rem/2.375rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #256a8f;
+}
+.user_model {
+  display: flex;
+  gap: 1rem;
+}
+
+.loader {
+  height: 5.9375rem;
+  width: 26.6875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.loader p {
+  width: 100%;
+  height: 2.375rem;
+  text-align: left;
+  font: normal normal 600 1.875rem/2.375rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #1080af;
+  opacity: 1;
+  margin-top: 1.0625rem;
+}
+
+.loader img {
+  width: 5rem;
+  height: 2.375rem;
+}
+
+.coberturas {
+  display: flex;
+  flex-shrink: 0;
+  margin-top: -1rem;
+  width: 100%;
+  margin-bottom: 8rem;
+}
+
+.box_cob {
+  all: unset;
+  flex: 1;
+  height: 3.6875rem;
+  background: #d5d5d5 0% 0% no-repeat padding-box;
+  border-radius: 0.9375rem 0.9375rem 0rem 0rem;
+  opacity: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.box_cob.active {
+  background: #f1f1f1 0% 0% no-repeat padding-box;
+}
+.box_cob.active .number_cot {
+  background: #e4373b 0% 0% no-repeat padding-box;
+}
+.box_cob.active p {
+  color: #1080af;
+}
+
+.number_cot {
+  position: relative;
+  top: -1rem;
+  width: 2rem;
+  height: 2rem;
+  background: #a1a1a1 0% 0% no-repeat padding-box;
+  border-radius: 100%;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font: normal normal 600 1.25rem/1.625rem "Sem";
+}
+.box_cob p {
+  position: relative;
+  bottom: 0.75rem;
+  justify-items: center;
+  height: 1.625rem;
+  text-align: left;
+  font: normal normal 600 1.25rem/1.625rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #666666;
+  opacity: 1;
+}
+
+.descrip_cob {
+  width: 100%;
+  height: 75rem;
+  padding-top: 3.4375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #f1f1f1 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.contenido_box_cot {
+  position: relative;
+  margin-top: 3.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: -1rem;
+  background: #f1f1f1 0% 0% no-repeat padding-box;
+}
+
+.des {
+  position: absolute;
+  top: 4rem;
+  max-width: 85%;
+  text-align: center;
+  font: normal normal 400 1.5625rem/2.5rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #28373b;
+  opacity: 1;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.conditions {
+  width: 41.9375rem;
+  height: 1.625rem;
+  text-align: center;
+  font: normal normal 600 1.25rem/1.625rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #1080af;
+  opacity: 1;
+  white-space: nowrap;
+  margin-bottom: 2rem;
+}
+
+/* .title3 {
+  width: 20rem;
+  height: 3.5625rem;
+  text-align: left;
+  font: normal normal bold 2.8125rem/3.5625rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #1080af;
+  opacity: 1;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+  margin-right: 4rem;
+} */
+
+.title3 {
+  width: 20rem;
+  height: 3.5625rem;
+  text-align: left;
+  font: normal normal bold 2.8125rem / 3.5625rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #1080af;
+  opacity: 1;
+  /* margin-bottom: 1rem; */
+  white-space: nowrap;
+  margin-right: 10rem;
+}
+.container_cards {
+  width: 97%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3.875rem;
+  padding-bottom: 3rem;
+}
+
+.box_cotizaciones {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 11.3125rem;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+  gap: 1rem;
+
+  box-sizing: border-box;
+}
+
+.box_fav {
+  border: 0.125rem solid #e4373b;
+}
+
+.star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2.1875rem;
+  height: 2.125rem;
+  background: #e4373b 0% 0% no-repeat padding-box;
+  border-radius: 0rem 0rem 0rem 0.9375rem;
+  opacity: 1;
+}
+
+.star img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.descuento_alternativo_movil {
+  display: none;
+}
+
+.recomend {
+  width: 13.8125rem;
+  height: 1.8125rem;
+  top: -1.8125rem;
+  left: -0.125rem;
+  position: absolute;
+  background: #e4373b 0% 0% no-repeat padding-box;
+  border-radius: 0.625rem 0.625rem 0rem 0rem;
+  opacity: 1;
+  text-align: center;
+  font: normal normal 600 1.25rem/1.625rem "Sem";
+  letter-spacing: 0.125rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: center; /* Centrando horizontalmente */
+  align-items: center;
+}
+
+.cont_box_1 {
+  display: flex;
+  gap: 3rem;
+}
+
+.logo_cot {
+  object-fit: contain;
+  height: 8.25rem;
+  width: 14.625rem;
+}
+.precio_ant {
+  position: relative;
+  height: 6.25rem;
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  box-sizing: border-box;
+}
+.descuento {
+  position: absolute;
+  top: -1.6rem;
+  left: 9rem;
+  width: 4.375rem;
+  height: 2.0625rem;
+  text-align: center;
+  font: normal normal bold 1.5625rem/2rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #ffffff;
+  opacity: 1;
+  background: #e4373b 0% 0% no-repeat padding-box;
+  border-radius: 0.625rem 0.625rem 0.625rem 0rem;
+}
+.cont_new {
+  position: relative;
+}
+
+.cont_center {
+  position: relative;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.tip_cob {
+  position: relative;
+  width: 10rem;
+  height: 4rem;
+  text-align: center;
+  font: normal normal 600 1.25rem/1.625rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #1080af;
+  opacity: 1;
+  border-top: 0.0625rem solid #1080af;
+  border-bottom: 0.0625rem solid #1080af;
+  border-left: none;
+  border-right: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.separador {
+  position: absolute;
+  left: 50%;
+  display: none;
+  width: 1px;
+  height: 90%;
+  background-color: rgb(180, 180, 180);
+}
+
+.prep_ant {
+  width: 12.3125rem;
+  height: 3.5rem;
+  background: #999999 0% 0% no-repeat padding-box;
+  border-radius: 0.9375rem;
+  opacity: 1;
+  display: flex;
+  justify-content: center; /* Centrando horizontalmente */
+  align-items: center;
+}
+
+.prep_ant p {
+  text-align: center;
+  text-decoration: line-through;
+  font: normal normal 600 2.5rem/3.125rem "Encode";
+  letter-spacing: 0rem;
+  color: #ffffff;
+  opacity: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.valor_final {
+  height: 6.25rem;
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cont1 {
+  width: 3.375rem;
+  height: 1.625rem;
+  text-align: left;
+  font: normal normal 600 1.25rem/1.625rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #999999;
+  opacity: 1;
+}
+.cont2 {
+  width: 19.5625rem;
+  text-align: left;
+  font: normal normal 600 5rem/3.125rem "Encode";
+  letter-spacing: 0rem;
+  color: #999999;
+}
+
+.info_desc {
+  display: none;
+  position: absolute;
+  top: -1.4rem;
+  left: 13%;
+  width: 13.6875rem;
+  height: 4.75rem;
+}
+.butons a:hover + .info_desc {
+  display: block;
+  z-index: 1;
+}
+.butons {
+  height: 6.5625rem;
+  width: 18.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  gap: 0.5rem;
+}
+
+.b1_fav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.0625rem;
+  width: 18.25rem;
+  background: #e4373b 0% 0% no-repeat padding-box;
+  border-radius: 1.875rem;
+  opacity: 1;
+}
+.b1_fav p {
+  width: 9.1875rem;
+  height: 1.625rem;
+  text-align: left;
+  font: normal normal 600 1.25rem/1.625rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.b1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.0625rem;
+  width: 18.25rem;
+
+  border: 1px solid #e4373b;
+  border-radius: 1.875rem;
+  opacity: 1;
+}
+.b1 p {
+  width: 9.1875rem;
+  height: 1.625rem;
+  text-align: left;
+  font: normal normal 600 1.25rem/1.625rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #e4373b;
+  opacity: 1;
+}
+
+.b2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.0625rem;
+  width: 18.25rem;
+  border: 0.0625rem solid #357c9c;
+  border-radius: 1.875rem;
+  opacity: 1;
+}
+
+.b2 p {
+  width: 15.9375rem;
+  height: 1.625rem;
+  text-align: left;
+  font: normal normal 600 1.25rem/1.625rem "Dosis Med";
+  letter-spacing: 0rem;
+  color: #256a8f;
+  opacity: 1;
+}
+
+.h2 {
+  width: 34.1875rem;
+  height: 2.375rem;
+  text-align: left;
+  font: normal normal bold 1.875rem/2.375rem "Dosis Bold";
+  letter-spacing: 0rem;
+  color: #1080af;
+  opacity: 1;
+  margin-top: 3.375rem;
+  margin-bottom: 11.75rem;
+}
+
+.cont_select {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+/* .title_options {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  align-items: center;
+} */
+
+.title_options {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  align-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+.title_movile {
+  width: 20%;
+  white-space: nowrap;
+  /* margin-left: -10rem; */
+  margin: 0;
+  /* margin-bottom: 0.5rem; */
+  font: normal normal normal 1.875rem/2.375rem "Dosis Med";
+  color: #1080af;
+}
+/* .change_cob {
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1rem;
+} */
+
+.change_cob {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* padding-bottom: 1rem; */
+  gap: 3rem;
+  align-items: center;
+}
+.desktop_none {
+  opacity: 0;
+}
+.tipes_cobert {
+  width: 100%;
+  padding: 0.5rem;
+  font: normal normal normal 1.5rem/2rem "Dosis Med";
+
+  background-color: #f1f1f1;
+  border: 1px solid #1080af;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
+
+.tipes_cobert::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #1080af;
+  pointer-events: none;
+}
+
+.tipes_cobert:hover {
+  background-color: #e5f2f9;
+}
+
+.tipes_cobert option {
+  background-color: #ffffff;
+  color: #1080af;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.tipes_cobert option:checked {
+  background-color: #d5eaf5;
+  color: #1080af;
+}
+
+.icon_cot {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  height: auto;
+}
+
+@keyframes slider {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 1855px) {
+  html {
+    font-size: 10px;
+  }
+
+  .tipes-seguros {
+    justify-items: center;
+    align-items: center;
+  }
+
+  .box img {
+    width: 4rem;
+    height: 4rem;
+  } /* index2 */
+
+  .descrip_cob {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1155px) {
+  html {
+    font-size: 9px;
+  }
+  .precio_ant {
+    flex-direction: column;
+    height: 9rem;
+  }
+  .container_cards_com {
+    width: 80%;
+  }
+  .tipes-seguros {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .contenedor_mas_menos {
+    grid-column: 4;
+    grid-row: 1;
+  }
+  .box_cotizaciones {
+    height: auto;
+  }
+  .cont_center {
+    flex-direction: column;
+    gap: 0.2rem;
+    width: 18.25rem;
+    padding: 1rem;
+  }
+  .cont_new {
+    position: relative;
+    top: 1.5rem;
+    left: 3.4rem;
+  }
+
+  .descuento {
+    top: -1.6rem;
+    left: 9rem;
+  }
+  .valor_final {
+    width: auto;
+    flex-direction: column;
+  }
+  .cont1 {
+    align-self: flex-start;
+  }
+  .cont2 {
+    padding: 1rem;
+  }
+
+  .logo_cot {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 6px;
+  }
+  .opciones_seguros {
+    padding-top: 0;
+    margin-top: -3rem;
+  }
+  .tipes-seguros {
+    margin-top: 10rem;
+    width: 70%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contenedor_mas_menos {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .movil_none {
+    display: none;
+  }
+
+  .info {
+    margin-right: 4rem;
+  }
+  .box_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15rem;
+  }
+
+  .barra-fija {
+    animation: none;
+    position: relative;
+    top: -10rem;
+    height: auto;
+    justify-content: center;
+    padding: 0 0.625rem;
+  }
+
+  .button_cotizar button {
+    width: 120%;
+  }
+
+  .texto2 {
+    white-space: nowrap;
+    animation: none;
+    display: block;
+    opacity: 1;
+    z-index: 999999;
+    font-size: 15px;
+    position: relative;
+  }
+  .box img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .box_s .trans {
+    opacity: 0.3;
+  }
+
+  .cont_flex_questions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    min-width: calc(98% / 2);
+  }
+
+  .contenido1 {
+    justify-content: center;
+  }
+  .contenido2 {
+    padding-top: 1rem;
+  }
+  .contenido4 {
+    width: auto;
+  }
+  .div2 {
+    position: relative;
+    justify-content: space-evenly;
+  }
+  .contenido5 {
+    position: absolute;
+    top: 7rem;
+    left: 29%;
+  }
+  .letra_chica {
+    margin-top: 5rem;
+  }
+  footer {
+    margin-bottom: 0;
+    padding-bottom: 8rem;
+  }
+
+  /* index2  */
+  .cont_padre {
+    width: 100%;
+  }
+
+  .dates {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .container_cards {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .contenido_box_cot {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .box_cotizaciones {
+    height: auto;
+    padding: 1rem;
+    width: 100%;
+    font-size: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cont_box_1 {
+    gap: 0;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .precio_ant {
+    width: 18.25rem;
+    height: auto;
+    flex-direction: column;
+    gap: 0;
+    justify-content: space-between;
+    top: 3rem;
+  }
+
+  .descuento_alternativo_movil {
+    display: none;
+  }
+  .descuento_alternativo_movil img {
+    width: 16.25rem;
+    height: auto;
+  }
+
+  .butons {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: relative;
+    left: 25%;
+  }
+
+  .change_cob {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: start;
+    width: auto;
+    height: auto;
+  }
+  .separador {
+    display: block;
+  }
+
+  .desktop_none {
+    opacity: 1;
+  }
+
+  .container6 {
+    margin-left: 1rem;
+  }
+  .cont_select {
+    background-color: #1080af;
+    padding: 1rem;
+    margin-top: 0.5rem;
+  }
+  .title_movile {
+    color: #ffffff;
+  }
+
+  .tip_cob {
+    width: 20rem;
+    height: 4rem;
+    top: 2rem;
+  }
+  .logo_cot {
+    width: 26rem;
+  }
+}
+@media (max-width: 483px) {
+  .app {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 90rem;
+    margin-left: 0;
+  }
+  .tipes-seguros {
+    grid-template-columns: repeat(2, 1fr);
+    height: 78rem;
+  }
+
+  .contenedor_mas_menos {
+    grid-column: 1 /-1;
+    grid-row: 4;
+  }
+
+  #ver_mas {
+    width: 40rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .info_app {
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    margin-left: 0;
+  }
+  .t2 {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 48rem;
+  }
+  .parrafo {
+    text-align: center;
+    width: 100%;
+  }
+  .svg_app {
+    position: absolute;
+    top: 10rem;
+  }
+  .container_flex_descriptions {
+    width: 80%;
+    padding: 0 1rem;
+  }
+  .texto_final {
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .acc_web {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .enlace {
+    justify-content: center;
+    gap: 2rem;
+  }
+}
