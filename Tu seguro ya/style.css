@@ -1509,7 +1509,7 @@ footer {
   opacity: 1;
 }
 .b1 p {
-  width: 9.1875rem;
+  width: auto;
   height: 1.625rem;
   text-align: left;
   font: normal normal 600 1.25rem/1.625rem "Dosis Med";
@@ -1531,7 +1531,7 @@ footer {
 }
 
 .b2 p {
-  width: 15.9375rem;
+  width: auto;
   height: 1.625rem;
   text-align: left;
   font: normal normal 600 1.25rem/1.625rem "Dosis Med";
