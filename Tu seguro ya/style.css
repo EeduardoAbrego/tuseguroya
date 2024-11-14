@@ -117,9 +117,9 @@ a:visited {
 
 .days {
   display: flex;
-  height: 1.25rem;
+  height: auto;
   margin: 0%;
-  font: normal normal bold 1rem/1.25rem "Dosis Med";
+  font: normal normal bold 1.3rem/1.25rem "Dosis Med";
   color: #28373b;
   text-align: left;
   margin-left: 0;
@@ -1726,10 +1726,7 @@ footer {
   .cont1 {
     align-self: flex-start;
   }
-  .cont2 {
-    padding: 1rem;
-  }
-
+ 
   .logo_cot {
     width: 20rem;
   }
