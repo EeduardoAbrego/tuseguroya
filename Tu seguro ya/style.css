@@ -1481,7 +1481,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 3.0625rem;
-  width: auto;
+  width: 18.25rem;
   background: #e4373b 0% 0% no-repeat padding-box;
   border-radius: 1.875rem;
   opacity: 1;
@@ -1502,7 +1502,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 3.0625rem;
-  width: 18.25rem;
+  width: 19.25rem;
 
   border: 1px solid #e4373b;
   border-radius: 1.875rem;
@@ -1524,7 +1524,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 3.0625rem;
-  width: 18.25rem;
+  width: 19.25rem;
   border: 0.0625rem solid #357c9c;
   border-radius: 1.875rem;
   opacity: 1;
