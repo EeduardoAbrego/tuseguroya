@@ -1386,7 +1386,7 @@ footer {
   width: 10rem;
   height: 4rem;
   text-align: center;
-  font: normal normal 600 1.75rem/1.625rem "Dosis Med";
+  font: normal normal 600 1.25rem/1.625rem "Dosis Med";
   letter-spacing: 0rem;
   color: #1080af;
   opacity: 1;
@@ -1933,6 +1933,7 @@ footer {
     width: 20rem;
     height: 4rem;
     top: 2rem;
+     font: normal normal 600 1.75rem/1.625rem "Dosis Med";
   }
   .logo_cot {
     width: 26rem;
