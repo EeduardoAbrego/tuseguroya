@@ -1235,7 +1235,7 @@ footer {
 }
 
 .conditions {
-  width: 41.9375rem;
+  width: auto;
   height: 1.625rem;
   text-align: center;
   font: normal normal 600 1.25rem/1.625rem "Dosis Med";
@@ -1533,7 +1533,7 @@ footer {
 }
 
 .b2 p {
-  width: auto;
+  width: 90%;
   height: 1.625rem;
   text-align: left;
   font: normal normal 600 1.25rem/1.625rem "Dosis Med";
@@ -1874,11 +1874,10 @@ footer {
   }
 
   .contenido_box_cot {
-    padding: 0.5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 0;
+    margin-top: 0.5rem;
   }
 
   .box_cotizaciones {
@@ -1945,7 +1944,7 @@ footer {
   .cont_select {
     background-color: #1080af;
 
-    margin-top: 0.5rem;
+    margin-top: -0.01rem;
     margin-bottom: 12rem;
   }
   .title_movile {
