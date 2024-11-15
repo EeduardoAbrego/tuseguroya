@@ -1943,7 +1943,7 @@ footer {
   }
   .cont_select {
     background-color: #1080af;
-
+    padding: 0.5rem;
     margin-top: -0.01rem;
     margin-bottom: 12rem;
   }
