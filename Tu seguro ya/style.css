@@ -96,7 +96,7 @@ a:visited {
   width: auto;
   margin-top: 0rem;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   gap: 2rem;
   align-items: center;
 }
@@ -124,7 +124,7 @@ a:visited {
   text-align: left;
   margin-left: 0;
   line-height: 2rem;
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .number {
@@ -1077,12 +1077,11 @@ footer {
   align-items: center;
   margin-top: 0.75rem;
   width: 100%;
-  
 }
 .container5 {
   height: 2.375rem;
   width: 24.25rem;
-  text-align: left;
+  text-align: center;
   font: normal normal normal 1.875rem/2.375rem "Dosis Med";
   letter-spacing: 0rem;
   color: #256a8f;
@@ -1263,14 +1262,13 @@ footer {
 .title3 {
   width: 20rem;
   height: 3.5625rem;
-  text-align: left;
+  text-align: center;
   font: normal normal bold 2.8125rem / 3.5625rem "Dosis Med";
   letter-spacing: 0rem;
   color: #1080af;
   opacity: 1;
   /* margin-bottom: 1rem; */
   white-space: nowrap;
-  margin-right: 10rem;
 }
 .container_cards {
   width: 97%;
@@ -1291,7 +1289,7 @@ footer {
   background: #ffffff 0% 0% no-repeat padding-box;
   opacity: 1;
   gap: 1rem;
-padding: 1rem;
+  padding: 1rem;
   box-sizing: border-box;
 }
 
@@ -1522,7 +1520,7 @@ padding: 1rem;
 }
 
 .b2 {
- box-sizing: border-box;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1542,7 +1540,7 @@ padding: 1rem;
   letter-spacing: 0rem;
   color: #256a8f;
   opacity: 1;
-   white-space: nowrap;
+  white-space: nowrap;
 }
 
 .h2 {
@@ -1572,8 +1570,8 @@ padding: 1rem;
 
 .title_options {
   display: flex;
-  justify-content: space-between;
-  width: 95%;
+  justify-content: space-around;
+  width: 100%;
   align-content: flex-end;
   align-items: flex-end;
   margin-bottom: 1rem;
@@ -1605,8 +1603,15 @@ padding: 1rem;
   gap: 3rem;
   align-items: center;
 }
-.desktop_none {
-  opacity: 0;
+
+.box_stuffed {
+  width: 20.3rem;
+  height: 1.875rem;
+}
+.contenido5_movil {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .tipes_cobert {
   width: 100%;
@@ -1619,7 +1624,9 @@ padding: 1rem;
   outline: none;
   cursor: pointer;
 }
-
+.desktop_none {
+  display: none;
+}
 .tipes_cobert::after {
   content: "▼";
   position: absolute;
@@ -1655,6 +1662,16 @@ padding: 1rem;
   right: 0;
   height: auto;
 }
+.no-detect {
+  -webkit-touch-callout: none; /* Evita el menú contextual en Safari */
+  touch-callout: none; /* Propiedad estándar */
+
+  -webkit-user-select: text; /* Permite seleccionar texto en Safari */
+  user-select: text; /* Propiedad estándar */
+
+  -webkit-hyphens: none; /* Evita dividir números en Safari */
+  hyphens: none; /* Propiedad estándar */
+}
 
 @keyframes slider {
   from {
@@ -1665,7 +1682,7 @@ padding: 1rem;
   }
 }
 
-@media  only screen and (max-width: 1855px) {
+@media only screen and (max-width: 1855px) {
   html {
     font-size: 10px;
   }
@@ -1685,7 +1702,7 @@ padding: 1rem;
   }
 }
 
-@media  only screen and (max-width: 1155px) {
+@media only screen and (max-width: 1155px) {
   html {
     font-size: 9px;
   }
@@ -1730,21 +1747,21 @@ padding: 1rem;
   .cont1 {
     align-self: flex-start;
   }
- 
+
   .logo_cot {
     width: 20rem;
   }
 }
 
-@media  only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   html {
     font-size: 6px;
   }
-  .logo{
+  .logo {
     margin-left: 2rem;
   }
-  .icon_flot{
-    left:1.3rem ;
+  .icon_flot {
+    left: 1.3rem;
   }
   .opciones_seguros {
     padding-top: 0;
@@ -1829,13 +1846,9 @@ padding: 1rem;
     position: relative;
     justify-content: space-evenly;
   }
-  .contenido5 {
-    position: absolute;
-    top: 7rem;
-    left: 29%;
-  }
+
   .letra_chica {
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
   footer {
     margin-bottom: 0;
@@ -1851,6 +1864,8 @@ padding: 1rem;
     flex-direction: column;
     align-items: center;
     margin-bottom: 0rem;
+    margin-top: 2rem;
+    gap: 1rem;
   }
 
   .container_cards {
@@ -1859,6 +1874,7 @@ padding: 1rem;
   }
 
   .contenido_box_cot {
+    padding: 0.5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1920,7 +1936,7 @@ padding: 1rem;
   }
 
   .desktop_none {
-    opacity: 1;
+    display: flex;
   }
 
   .container6 {
@@ -1928,7 +1944,7 @@ padding: 1rem;
   }
   .cont_select {
     background-color: #1080af;
-    padding: 1rem;
+
     margin-top: 0.5rem;
     margin-bottom: 12rem;
   }
@@ -1940,23 +1956,28 @@ padding: 1rem;
     width: 20rem;
     height: 4rem;
     top: 2rem;
-     font: normal normal 600 1.75rem/1.625rem "Dosis Med";
+    font: normal normal 600 1.75rem/1.625rem "Dosis Med";
   }
   .logo_cot {
     width: 26rem;
   }
-  .des{
+  .des {
     top: 11rem;
-     font: normal normal 400 1.3625rem / 2.5rem "Dosis Med";
+    font: normal normal 400 1.3625rem / 2.5rem "Dosis Med";
   }
   .conditions {
     font: normal normal 600 1.35rem / 1.625rem "Dosis Med";
-   margin-bottom: 0rem; 
-}
-  .title3{
-    color:#ffffff;
+    margin-bottom: 0rem;
+  }
+  .title3 {
+    color: #ffffff;
     margin-right: 0rem;
     text-align: center;
+  }
+
+  .box_stuffed {
+    width: auto;
+    height: auto;
   }
 }
 @media only screen and (max-width: 483px) {
