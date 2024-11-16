@@ -1518,7 +1518,7 @@ footer {
 .b1 p {
   width: auto;
   height: 1.625rem;
-  text-align: left;
+  text-align: center;
   font: normal normal 600 1.25rem/1.625rem "Dosis Med";
   letter-spacing: 0rem;
   color: #e4373b;
@@ -1542,7 +1542,7 @@ footer {
   width: 100%;
   height: 1.625rem;
   text-align: center;
-  font: normal normal 600 1rem/1.625rem "Dosis Med";
+  font: normal normal 600 1.25rem/1.625rem "Dosis Med";
   letter-spacing: 0rem;
   color: #256a8f;
   opacity: 1;
