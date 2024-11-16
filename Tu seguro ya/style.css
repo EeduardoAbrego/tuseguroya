@@ -1043,6 +1043,7 @@ footer {
   font: normal normal normal 1.375em/1.75em "Reg";
   letter-spacing: 0rem;
   color: #ffffff;
+  white-space: nowrap;
 }
 
 .letra_chica {
@@ -1847,7 +1848,7 @@ footer {
     padding-top: 1rem;
   }
   .contenido4 {
-    width: 50%;
+    width: auto;
   }
   .div2 {
     position: relative;
