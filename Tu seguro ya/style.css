@@ -1028,6 +1028,7 @@ footer {
   letter-spacing: 0rem;
   color: #ffffff;
   margin-right: 0.3125rem;
+  white-space: nowrap;
 }
 
 .matricula {
@@ -1841,7 +1842,7 @@ footer {
     padding-top: 1rem;
   }
   .contenido4 {
-    width: auto;
+    width: 50%;
   }
   .div2 {
     position: relative;
