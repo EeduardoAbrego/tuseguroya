@@ -1509,7 +1509,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 3.0625rem;
-  width: 19.25rem;
+  width: 100%;
 
   border: 1px solid #e4373b;
   border-radius: 1.875rem;
@@ -1519,7 +1519,7 @@ footer {
   width: auto;
   height: 1.625rem;
   text-align: center;
-  font: normal normal 600 1.25rem/1.625rem "Dosis Med";
+  font: normal normal 600 1.25rem/1.625rem "Sem";
   letter-spacing: 0rem;
   color: #e4373b;
   opacity: 1;
@@ -1532,17 +1532,17 @@ footer {
   justify-content: center;
   align-items: center;
   height: 3.0625rem;
-  width: 19.25rem;
+  width: 100%;
   border: 0.0625rem solid #357c9c;
   border-radius: 1.875rem;
   opacity: 1;
 }
 
 .b2 p {
-  width: 100%;
+  width: auto;
   height: 1.625rem;
   text-align: center;
-  font: normal normal 600 1.25rem/1.625rem "Dosis Med";
+  font: normal normal 600 1.25rem/1.625rem "Sem";
   letter-spacing: 0rem;
   color: #256a8f;
   opacity: 1;
