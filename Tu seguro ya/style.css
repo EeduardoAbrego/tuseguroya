@@ -1985,6 +1985,9 @@ footer {
     width: auto;
     height: auto;
   }
+  .b2 p {
+    font: normal normal 600 1rem/1.625rem "Sem";
+  }
 }
 @media only screen and (max-width: 483px) {
   .app {
