@@ -1542,12 +1542,13 @@ footer {
 .b2 p {
   width: 90%;
   height: 1.625rem;
-  text-align: left;
-  font: normal normal 600 1.25rem/1.625rem "Dosis Med";
+  text-align: center;
+  font: normal normal 600 1rem/1.625rem "Dosis Med";
   letter-spacing: 0rem;
   color: #256a8f;
   opacity: 1;
   white-space: nowrap;
+  word-wrap: break-word;
 }
 
 .h2 {
