@@ -1560,6 +1560,7 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+  margin-bottom: 0;
 }
 /* .title_options {
   display: flex;
@@ -1945,7 +1946,7 @@ footer {
     background-color: #1080af;
     padding: 0.5rem;
     margin-top: -0.01rem;
-    margin-bottom: 12rem;
+    margin-bottom: 9rem;
   }
   .title_movile {
     color: #ffffff;
@@ -2041,5 +2042,11 @@ footer {
   .enlace {
     justify-content: center;
     gap: 2rem;
+  }
+}
+
+@media screen and (max-device-width: 375px) {
+  html {
+    font-size: 4px; /* Ajusta según necesidad */
   }
 }

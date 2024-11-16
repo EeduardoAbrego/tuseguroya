@@ -126,19 +126,40 @@
                 <div class="change_cob  desktop_none">
                   <h1 class="title_movile">Seleccioná tu cobertura:</h1>
 
-                  <select class="tipes_cobert">
+                  <select id="selectCobertura" class="tipes_cobert">
                     <option value="" disabled selected>
                       Todas las coberturas
                     </option>
-                    <option value="Responsabilidad Civil">
+                    <option
+                      value="Responsabilidad Civil"
+                      data-descripcion="Es una cobertura que contempla los daños que el vehículo le ocasione a terceros. Incluye daños materiales y/o lesiones, más grúa y asistencia mecánica para el vehículo."
+                    >
                       Responsabilidad Civil
                     </option>
-                    <option value="Tercero Básico">Tercero Básico</option>
-                    <option value="Tercero Completo">Tercero Completo</option>
-                    <option value="Tercero Completo Full">
+                    <option
+                      value="Tercero Básico"
+                      data-descripcion="Es una cobertura que incluye el robo total, incendio total, responsabilidad civil, más grúa y asistencia mecánica."
+                    >
+                      Tercero Básico
+                    </option>
+                    <option
+                      value="Tercero Completo"
+                      data-descripcion="Es una cobertura que incluye el robo total y parcial (ruedas, batería, cristales del techo), incendio total y parcial, responsabilidad civil, grúa y asistencia mecánica, además de adicionales (cristales laterales y daños en cerraduras por intento de robo)."
+                    >
+                      Tercero Completo
+                    </option>
+                    <option
+                      value="Tercero Completo Full"
+                      data-descripcion="Es una cobertura que incluye el robo total y parcial (ruedas, batería, cristales del techo), incendio total y parcial, responsabilidad civil, grúa y asistencia mecánica, además de adicionales (cristales laterales, luneta, parabrisas, daños por granizo, inundación y cerraduras por intento de robo)."
+                    >
                       Tercero Completo Full
                     </option>
-                    <option value="Todo Riesgo">Todo Riesgo</option>
+                    <option
+                      value="Todo Riesgo"
+                      data-descripcion="Es una cobertura que contempla la cobertura del Tercero Completo Full, más daños parciales (deducible según el plan elegido)."
+                    >
+                      Todo Riesgo
+                    </option>
                     <option value="Todos">Todos</option>
                   </select>
                 </div>
@@ -528,25 +549,65 @@
 
     <script>
 
-            const botonesCobertura = document.querySelectorAll('.box_cob');
-              const descripcion = document.querySelector('.des');
 
-              botonesCobertura.forEach(boton => {
-                boton.addEventListener('click', () => {
-                  console.log('Botón clickeado:', boton.textContent);
-                  descripcion.textContent = boton.getAttribute('data-descripcion');
+
+
+                      const botonesCobertura = document.querySelectorAll('.box_cob');
+                        const descripcion = document.querySelector('.des');
+                        const contSelect = document.querySelector('.cont_select');
+                        const classCoberturas = document.querySelector('.coberturas');
+
+
+                     botonesCobertura.forEach(boton => {
+                          boton.addEventListener('click', () => {
+                            descripcion.textContent = boton.getAttribute('data-descripcion');
+                            let tipoCobertura =  boton.querySelector('p').textContent;
+                             if (tipoCobertura === 'Todo Riesgo' || tipoCobertura === 'Tercero Básico' || tipoCobertura === 'Todas las opciones' ){
+        classCoberturas.style.marginBottom = '4rem';
+      }
+      else if (tipoCobertura === 'Tercero Completo' || tipoCobertura === 'Tercero Completo Full' ){
+        classCoberturas.style.marginBottom = '8rem';
+      }
+       else {
+        classCoberturas.style.marginBottom = '7rem';
+      }
+
+
+
+                          });
+                        });
+
+
+                        const botones = document.querySelectorAll(".box_cob");
+
+                botones.forEach((boton) => {
+                  boton.addEventListener("click", () => {
+                    botones.forEach((btn) => btn.classList.remove("active"));
+                    boton.classList.add("active");
+                  });
                 });
-              });
+
+              const selectCobertura = document.querySelector('#selectCobertura');
+              selectCobertura.addEventListener('change', () => {
+
+            const opcionSeleccionada = selectCobertura.options[selectCobertura.selectedIndex];
+            const valorSeleccionado = opcionSeleccionada.value;
 
 
-              const botones = document.querySelectorAll(".box_cob");
-
-      botones.forEach((boton) => {
-        boton.addEventListener("click", () => {
-          botones.forEach((btn) => btn.classList.remove("active"));
-          boton.classList.add("active");
-        });
-      });
+            descripcion.textContent = opcionSeleccionada.getAttribute('data-descripcion');
+            if (valorSeleccionado === 'Tercero Básico' ) {
+        contSelect.style.marginBottom = '7rem';
+      }
+      else if (valorSeleccionado === 'Todo Riesgo' ){
+        contSelect.style.marginBottom = '9rem';
+      }
+      else if (valorSeleccionado === 'Tercero Completo' || valorSeleccionado === 'Tercero Completo Full' ){
+        contSelect.style.marginBottom = '12rem';
+      }
+       else {
+        contSelect.style.marginBottom = '9rem';
+      }
+          });
     </script>
   </body>
 </html>
